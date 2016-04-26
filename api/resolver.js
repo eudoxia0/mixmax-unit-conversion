@@ -19,7 +19,7 @@ module.exports = function(req, res) {
 
   var html;
   if (result) {
-    html = '<span>' + result + '</span>';
+    html = '<span>' + result.toFixed(2) + '</span>';
   } else {
     html = '<span>Invalid conversion></span>';
   }
