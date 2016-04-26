@@ -21,7 +21,7 @@ module.exports = function(req, res) {
   if (result) {
     html = '<span>' + result.toFixed(2) + '</span>';
   } else {
-    html = '<span>Invalid conversion></span>';
+    html = '<span>Invalid conversion</span>';
   }
 
   res.json({
