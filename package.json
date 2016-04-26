@@ -1,21 +1,21 @@
 {
-  "name": "giphy-mixmax-app",
+  "name": "mixmax-unit-conversion",
   "version": "0.0.1",
-  "description": "Giphy App for Mixmax",
+  "description": "Unit conversion command for Mixmax",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mixmaxhq/giphy-mixmax-app.git"
+    "url": "git://github.com/eudoxia0/giphy-mixmax-app.git"
   },
-  "author": "Chanpory Rith <chanpory@mixmax.com> (https://mixmax.com/)",
+  "author": "Fernando Borretti <eudoxiahp@gmail.com> (http://eudoxia.me/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mixmaxhq/giphy-mixmax-app/issues"
+    "url": "https://github.com/eudoxia0/mixmax-unit-conversion/issues"
   },
-  "homepage": "https://github.com/mixmaxhq/giphy-mixmax-app",
+  "homepage": "https://github.com/eudoxia0/mixmax-unit-conversion",
   "dependencies": {
     "body-parser": "^1.12.2",
     "cors": "^2.7.1",
