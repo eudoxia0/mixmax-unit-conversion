@@ -1,4 +1,4 @@
-var key = require('../utils/key');
+var key = require('./key');
 var sync = require('synchronize');
 var request = require('request');
 var _ = require('underscore');
