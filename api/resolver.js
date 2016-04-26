@@ -9,19 +9,13 @@ var units = require('node-units');
 module.exports = function(req, res) {
   var term = req.query.text.trim();
 
-  var result;
+  var html;
   try {
-    result = units.convert(term);
+    const result = units.convert(term);
+    html = '<span>' + result.toFixed(2) + '</span>';
   } catch(e) {
     // Conversion error
-    result = null;
-  }
-
-  var html;
-  if (result) {
-    html = '<span>' + result.toFixed(2) + '</span>';
-  } else {
-    html = '<span>Invalid conversion</span>';
+    html = '<span>Invalid conversion: ' + e.message + '</span>';
   }
 
   res.json({
