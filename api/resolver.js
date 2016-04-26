@@ -15,7 +15,7 @@ module.exports = function(req, res) {
     html = '<span>' + result.toFixed(2) + '</span>';
   } catch(e) {
     // Conversion error
-    html = '<span>Invalid conversion: ' + e.message + '</span>';
+    html = '<span>' + e + '</span>';
   }
 
   res.json({
