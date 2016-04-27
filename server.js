@@ -1,7 +1,5 @@
 var express = require('express');
-var bodyParser = require('body-parser');
 var app = express();
-var sync = require('synchronize');
 var cors = require('cors');
 
 // Since Mixmax calls this API directly from the client-side, it must be whitelisted.
