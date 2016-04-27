@@ -6,16 +6,16 @@ module.exports = function(req, res) {
   var term = req.query.text.trim();
 
   var html;
-  try {
-    const result = units.convert(term);
-    html = '<span>' + result.toFixed(2) + '</span>';
-  } catch(e) {
-    // Conversion error
-    html = '<span>' + e + '</span>';
+  if (term.length > 0) {
+    // Good conversion
+    html = term;
+  } else {
+    // Bad conversion
+    html = '';
   }
 
   res.json({
-    body: html,
+    html: html,
     raw: true
   });
 };
