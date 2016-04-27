@@ -15,6 +15,7 @@ module.exports = function(req, res) {
   }
 
   res.json({
-    body: html
+    body: html,
+    raw: true
   });
 };
